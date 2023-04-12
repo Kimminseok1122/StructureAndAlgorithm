@@ -1,8 +1,5 @@
 package LinkedList;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Main {
     public static void main(String[] args) {
         /**
@@ -36,16 +33,27 @@ public class Main {
         /**
          * LinkedList는 중간에 끼워넣는 로직이 필요하다가 말했다. 이를 만들어보자
          */
-
-        MyLinkedList.addNodeInsisde(5,4);
-
-        System.out.println(MyLinkedList.MyDelNode(6));
-        MyLinkedList.seeAllNode();
+//
+//        MyLinkedList.addNodeInsisde(5,4);
+//
+//        System.out.println(MyLinkedList.MyDelNode(6));
+//        MyLinkedList.seeAllNode();
 
         /**
          * 기존 링크드 리스트는 아쉬운게 head부터 데이터를 찾아가야 했음 케이스에따라 시간이 오래걸릴 수 있음
          * 그 단점을 보완하기 위해 더블 링크드 리스트가 파생됨 두개의 포인터가 존재
          */
 
+        DoubleLinkedList<Integer> MyDoubleLinkedList = new DoubleLinkedList<>();
+
+        MyDoubleLinkedList.addNode(1);
+        MyDoubleLinkedList.addNode(2);
+        MyDoubleLinkedList.addNode(3);
+        MyDoubleLinkedList.addNode(4);
+        MyDoubleLinkedList.addNode(5);
+
+        MyDoubleLinkedList.insertBackNode(5,7);
+        MyDoubleLinkedList.insertFrontNode(1, 8);
+        MyDoubleLinkedList.seeAllNode();
     }
 }
