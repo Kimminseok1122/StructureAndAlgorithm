@@ -7,6 +7,8 @@ public class MyHash<V>{
 
     private Slot<V>[] hashTable;
 
+    private Node<V> head = null;
+
     public MyHash(Integer size) {
         this.hashTable = new Slot[size];
     }
@@ -20,12 +22,22 @@ public class MyHash<V>{
 
     }
 
+    public class Node<V>{
+        Slot<V> slot;
+        Slot<V> next = null;
+
+        public Node(Slot<V> slot) {
+            this.slot = slot;
+        }
+    }
+
+
     public Integer hashFunction(String key) {
-        //this 깜빡하지 말긔
+        //this 깜빡하지 말자
         return Integer.valueOf(key.charAt(0)) % (this.hashTable.length);
     }
 
-    //이건 패배 인정
+    //Null 일때 고려 안했음, 또한 Slot을 인자로 받는것이 아닌 Type Parameter를 받아야했음
     public void addHash(String key, V value) {
         Integer location = this.hashFunction(key);
         if (this.hashTable[location] != null) {
