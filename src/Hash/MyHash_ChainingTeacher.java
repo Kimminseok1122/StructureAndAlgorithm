@@ -7,8 +7,6 @@ public class MyHash_ChainingTeacher<V> {
 
     private Slot<V>[] hashTable;
 
-    private Node<V> head = null;
-
     public MyHash_ChainingTeacher(Integer size) {
         this.hashTable = new Slot[size];
     }
@@ -22,15 +20,6 @@ public class MyHash_ChainingTeacher<V> {
             this.key = key;
             this.value = value;
             this.next = null;
-        }
-    }
-
-    public class Node<V> {
-        Slot<V> slot;
-        Slot<V> next = null;
-
-        public Node(Slot<V> slot) {
-            this.slot = slot;
         }
     }
 
