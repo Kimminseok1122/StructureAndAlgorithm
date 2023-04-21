@@ -1,5 +1,7 @@
 package Heap;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         /**
@@ -17,5 +19,23 @@ public class Main {
          *   ㄴ 최소 힙의 경우는 각 노드의 값은 해당 노드의 자식 노드가 가진 값보다 같거나 작음
          * - 2.
          */
+
+        MyMaxHeap myMaxHeap = new MyMaxHeap();
+        myMaxHeap.insertNode(1);
+        myMaxHeap.insertNode(2);
+        myMaxHeap.insertNode(3);
+        myMaxHeap.insertNode(4);
+        myMaxHeap.insertNode(5);
+
+        //myMaxHeap.getAllData();
+
+        MyMaxHeap_Teacher myMaxHeapTeacher = new MyMaxHeap_Teacher(1);
+
+        myMaxHeapTeacher.insert(2);
+        myMaxHeapTeacher.insert(3);
+        myMaxHeapTeacher.insert(4);
+        myMaxHeapTeacher.insert(5);
+
+        System.out.println(Arrays.toString(myMaxHeapTeacher.heapArray.toArray()));
     }
 }
