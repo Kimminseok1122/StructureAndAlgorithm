@@ -1,6 +1,4 @@
-package Tree;
-
-import java.util.Comparator;
+package Structure.Tree;
 
 
 public class NodeMgmt_Teacher {

@@ -1,11 +1,11 @@
-package Hash;
+package Structure.Hash;
 
 public class Main {
     public static void main(String[] args) {
         /**
          * 해쉬테이블 : Key : Value를 매핑할 수 있는 데이터 구조
          * Key를 해쉬 함수에 넣으면 이 키에 대한 값을 저장할 수 있는 주소를 반환
-         * Hash Function : 임의의 데이터를 고정된 길이의값으로 리턴해주는 함수
+         * Structure.Hash Function : 임의의 데이터를 고정된 길이의값으로 리턴해주는 함수
          *
          * 그러면 왜 해시 테이블이 유리할까?
          * 예를 들어, 값을 배열에 저장한다고 했을때 index에 따라 하나씩 검사를 해야한다. 문제는 데이터양이 많아질수록 많이 걸린다.

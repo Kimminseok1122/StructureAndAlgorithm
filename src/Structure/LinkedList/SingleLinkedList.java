@@ -1,4 +1,4 @@
-package LinkedList;
+package Structure.LinkedList;
 
 public class SingleLinkedList<T> {
 

@@ -1,6 +1,4 @@
-package Algorism;
-
-import java.time.Period;
+package Structure.Algorisms;
 
 public class Main {
 

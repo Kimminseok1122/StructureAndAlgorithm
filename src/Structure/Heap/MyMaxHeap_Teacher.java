@@ -1,4 +1,4 @@
-package Heap;
+package Structure.Heap;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -67,6 +67,7 @@ public class MyMaxHeap_Teacher {
                         if (this.heapArray.get(popped_idx) < this.heapArray.get(left_child_popped_idx)) {
                             Collections.swap(heapArray, popped_idx, left_child_popped_idx);
                             popped_idx = left_child_popped_idx;
+
                         }
                     } else{
                         if (this.heapArray.get(popped_idx) < this.heapArray.get(right_child_popped_idx)) {

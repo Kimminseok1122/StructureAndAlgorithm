@@ -1,6 +1,4 @@
-package stack;
-
-import java.util.Stack;
+package Structure.stack;
 
 public class main {
     public static void main(String[] args) {

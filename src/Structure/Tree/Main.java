@@ -1,4 +1,4 @@
-package Tree;
+package Structure.Tree;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,10 +13,10 @@ public class Main {
          * - Sibling (Brother Node) : 동일한 Parent Node를 가진 노드
          * - Depth : 트리에서 Node가 가질 수 있는 최대 Level
          *
-         * 트리 (Tree) 구조 란? => Node와 Branch를 이용해서, 사이클을 이루지 않도록 구성한 데이터 구조
+         * 트리 (Structure.Tree) 구조 란? => Node와 Branch를 이용해서, 사이클을 이루지 않도록 구성한 데이터 구조
          *
          * 이진 트리 : 노드의 최대 Branch가 2인 트리
-         * 이진 탐색 트리 (Binary Search Tree, BST) : 이진 트리에 다음과 같은 추가적인 조건이 있는 트리
+         * 이진 탐색 트리 (Binary Search Structure.Tree, BST) : 이진 트리에 다음과 같은 추가적인 조건이 있는 트리
          * 왼쪽 노드는 해당 노드보다 작은값, 오른쪽 노드는 해당노드보다 큰 값을 가지고 있음
          *
          * 이진 탐색 트리가 많이 쓰임

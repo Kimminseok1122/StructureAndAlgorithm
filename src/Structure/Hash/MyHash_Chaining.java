@@ -1,4 +1,4 @@
-package Hash;
+package Structure.Hash;
 
 import java.util.Arrays;
 import java.util.Objects;

@@ -1,4 +1,4 @@
-package LinkedList;
+package Structure.LinkedList;
 
 public class Main {
     public static void main(String[] args) {

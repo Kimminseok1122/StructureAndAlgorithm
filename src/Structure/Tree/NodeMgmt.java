@@ -1,4 +1,4 @@
-package Tree;
+package Structure.Tree;
 
 import java.util.Comparator;
 

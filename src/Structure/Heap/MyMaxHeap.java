@@ -1,9 +1,8 @@
-package Heap;
+package Structure.Heap;
 
 import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.function.BiFunction;
 
 public class MyMaxHeap {
 
